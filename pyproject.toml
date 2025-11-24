@@ -1,0 +1,24 @@
+[project]
+name = "pymusic"
+version = "0.1.0"
+description = "A Terminal Based MP3 Player"
+readme = "README.md"
+authors = [
+    { name = "kennek4", email = "kentabanay@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "rich",
+    "simpleaudio",
+    "pydub-ng",
+    "ffmpeg-python"
+]
+
+[tool.uv.sources]
+
+[project.scripts]
+pymusic = "pymusic:main"
+
+[build-system]
+requires = ["uv_build>=0.8.15,<0.9.0"]
+build-backend = "uv_build"
